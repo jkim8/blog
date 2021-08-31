@@ -1,5 +1,5 @@
-import moment from 'momnet'
 import mongoose from 'mongoose'
+import moment from 'momnet'
 
 const PostSchema = new mongoose.Schema({
     title: {
