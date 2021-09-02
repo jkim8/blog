@@ -7,7 +7,7 @@ const PostSchema = new mongoose.Schema({
         required: true,
         index: true,
     },
-    constents: {
+    contents: {
         type: String,
         required: true,
     },
