@@ -7,6 +7,7 @@ import cors from 'cors'
 
 //Routes
 import postRoutes from './routes/api/post'
+import userRoutes from './routes/api/user'
 import morgan from 'morgan'
 
 
@@ -39,5 +40,6 @@ mongoose.connect(MONGO_URI, {
 //Use routes    
 app.get("/")
 app.use("/api/post", postRoutes)
+app.use("/api/user", userRoutes)
 
 export default app
