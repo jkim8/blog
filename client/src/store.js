@@ -13,7 +13,7 @@ const createSagaMiddleware = createSagaMiddleware()
 const initialState = {}
 
 const middlewares = [createSagaMiddleware, routerMiddleware(history)]
-const devtools = window.EXTENSION_COMPOSE__
+const devtools = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
 
 const composeEnhancer =
     process.env.NODE_ENV === "production" ? compose : devtools || compose
